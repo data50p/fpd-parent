@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.femtioprocent</groupId>
+    <artifactId>fpd-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <name>FPD parent</name>
+    <url>http://maven.apache.org</url>
+
+    <modules>
+        <module>../fpd</module>
+        <module>../fpd2</module>
+        <module>../propaganda</module>
+        <module>../dataloggerserver</module>
+        <module>../regexplorer</module>
+    </modules>
+
+<distributionManagement>
+  <snapshotRepository>
+    <id>femtioprocent.se</id>
+    <name>femtioprocent-snapshots</name>
+    <url>http://femtioprocent.se:8081/artifactory/libs-snapshot-local</url>
+  </snapshotRepository>
+  <repository>
+    <id>femtioprocent.se</id>
+    <name>femtioprocent.se-releases</name>
+    <url>http://femtioprocent.se:8081/artifactory/libs-release-local</url>
+  </repository>
+
+</distributionManagement>
+
+
+
+</project>
